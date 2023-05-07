@@ -1,0 +1,16 @@
+nums = [2,4,9,-10,100,1000,89,67,1,3,0,98]
+largest = max(nums)
+
+second_largest = float('-inf')
+for num in nums:
+    if num != largest and num > second_largest:
+        second_largest = num
+print("Second largest number is:", second_largest)
+
+
+smallest = min(nums)
+second_smallest = float('inf')
+for num in nums:
+    if num != smallest and num < second_smallest:
+        second_smallest = num
+print("Second smallest number is:", second_smallest)
